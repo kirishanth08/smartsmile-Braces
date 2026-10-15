@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Scheduled Maintenance | SmartSmile Clinic</title>
+  <meta name="description" content="We're polishing the experience. SmartSmile system maintenance in progress.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- SmartSmile Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-between" style="background-color: var(--body-bg);">
+
+  <!-- Simple Header -->
+  <header class="py-3 px-4 border-bottom" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="brand-logo-wrap" href="../index.html">
+        <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ssLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0E273C"/>
+              <stop offset="50%" stop-color="#163954"/>
+              <stop offset="100%" stop-color="#24527A"/>
+            </linearGradient>
+            <linearGradient id="ssLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF2CE"/>
+              <stop offset="45%" stop-color="#E2B15C"/>
+              <stop offset="100%" stop-color="#B8822A"/>
+            </linearGradient>
+            <linearGradient id="ssToothEnamel" x1="30%" y1="0%" x2="70%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="35%" stop-color="#F3F9FC"/>
+              <stop offset="75%" stop-color="#D9EBF5"/>
+              <stop offset="100%" stop-color="#B7D5E8"/>
+            </linearGradient>
+            <linearGradient id="ssToothGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="ssArchwireGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" stop-color="#D5E5F2" stop-opacity="0.4"/>
+              <stop offset="25%" stop-color="#EBF4FA"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="75%" stop-color="#FCE6B3"/>
+              <stop offset="100%" stop-color="#DDA853" stop-opacity="0.5"/>
+            </linearGradient>
+            <linearGradient id="ssBracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF6D6"/>
+              <stop offset="50%" stop-color="#E5B25D"/>
+              <stop offset="100%" stop-color="#AD761E"/>
+            </linearGradient>
+            <linearGradient id="ssSmileArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E5B25D" stop-opacity="0.3"/>
+              <stop offset="20%" stop-color="#FCE19D"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="80%" stop-color="#FCE19D"/>
+              <stop offset="100%" stop-color="#E5B25D" stop-opacity="0.3"/>
+            </linearGradient>
+            <radialGradient id="ssAmbientGlow" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#1D608F" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#0E273C" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="toothDepth" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="2.5" stdDeviation="2.2" flood-color="#081826" flood-opacity="0.45"/>
+            </filter>
+            <filter id="logoSparkleGlow" x="-35%" y="-35%" width="170%" height="170%">
+              <feGaussianBlur stdDeviation="1" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+          <rect class="logo-bg" width="64" height="64" rx="16" fill="url(#ssLogoBg)"/>
+          <rect class="logo-border" x="1.2" y="1.2" width="61.6" height="61.6" rx="15" stroke="url(#ssLogoGold)" stroke-opacity="0.4" stroke-width="1.2"/>
+          <circle cx="32" cy="30" r="22" fill="url(#ssAmbientGlow)"/>
+          <g filter="url(#toothDepth)">
+            <path class="logo-tooth-body" d="M32 17C35 14.5 38.5 13.5 42 14.5C47.2 16 49 21.2 48.5 27C48 33.2 44.5 39.5 38.8 42.2C35.2 43.8 33.2 43 32 41.8C30.8 43 28.8 43.8 25.2 42.2C19.5 39.5 16 33.2 15.5 27C15 21.2 16.8 16 22 14.5C25.5 13.5 29 14.5 32 17Z" fill="url(#ssToothEnamel)"/>
+            <path class="logo-tooth-gloss" d="M22.5 15.8C25.2 14.8 28.2 15.5 31 17.5C28.5 16.5 25.5 16.2 23 17C18.5 18.5 17 22.8 17.2 27.5C17.1 24.5 18.5 17.2 22.5 15.8Z" fill="url(#ssToothGloss)"/>
+            <path d="M41.5 15.8C38.8 14.8 35.8 15.5 33 17.5C35.5 16.5 38.5 16.2 41 17C45.5 18.5 47 22.8 46.8 27.5C46.9 24.5 45.5 17.2 41.5 15.8Z" fill="#FFFFFF" opacity="0.35"/>
+          </g>
+          <path class="logo-archwire" d="M11 31.5C20.5 36.8 43.5 36.8 53 31.5" stroke="url(#ssArchwireGrad)" stroke-width="2" stroke-linecap="round"/>
+          <circle class="logo-node logo-node-1" cx="16" cy="33.2" r="1.5" fill="#EBF4FA"/>
+          <circle class="logo-node logo-node-2" cx="48" cy="33.2" r="1.5" fill="#FCE19D"/>
+          <g class="logo-bracket-group">
+            <rect class="logo-bracket-pad" x="25.5" y="27" width="13" height="11" rx="2" fill="url(#ssBracketGrad)" stroke="#FFE8A3" stroke-width="0.6"/>
+            <rect class="logo-bracket-slot" x="24.5" y="31.2" width="15" height="2.6" rx="0.6" fill="#0E273C" opacity="0.85"/>
+            <rect class="logo-bracket-gem" x="30.5" y="31" width="3" height="3" rx="0.7" fill="#FFFFFF"/>
+            <line x1="28.5" y1="27" x2="28.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+            <line x1="35.5" y1="27" x2="35.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+          </g>
+          <path class="logo-smile-arc" d="M15 48.5C22 55.5 42 55.5 49 48.5" stroke="url(#ssSmileArcGrad)" stroke-width="2.6" stroke-linecap="round"/>
+          <g class="logo-sparkle" filter="url(#logoSparkleGlow)">
+            <path d="M47 11.5L48.2 14.8L51.5 16L48.2 17.2L47 20.5L45.8 17.2L42.5 16L45.8 14.8Z" fill="url(#ssLogoGold)"/>
+            <circle cx="47" cy="16" r="1" fill="#FFFFFF"/>
+          </g>
+          <circle cx="51.5" cy="11.5" r="0.9" fill="#FFF2CE" opacity="0.85"/>
+        </svg>
+        <span class="brand-logo-text">
+          <span class="brand-logo-title"><span class="smart">SMART</span><span class="smile">SMILE</span><span class="dot">.</span></span>
+          <span class="brand-logo-tagline">Orthodontics &amp; Braces</span>
+        </span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button class="nav-util-btn theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill text-primary"></i>
+          </button>
+        <button class="nav-util-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction" title="Switch text direction">
+            <i class="bi bi-arrow-left-right text-warning"></i>
+          </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="my-auto py-5 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 84px; height: 84px; background: var(--blue-tint); color: var(--smart-blue); font-size: 2.4rem;">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+
+          <span class="smart-badge smart-badge-gold mb-3">Scheduled System Fine-Tuning</span>
+          <h1 class="display-5 fw-extrabold mb-3" style="color: var(--deep-navy);">
+            WE’RE POLISHING THE EXPERIENCE.
+          </h1>
+          <p class="lead text-secondary mb-4">
+            Our clinical server is undergoing routine maintenance and security updates. We will be back online shortly. For urgent orthodontic questions, please reach our on-call coordinator.
+          </p>
+
+          <div class="smart-card p-4 mx-auto mb-4" style="max-width: 500px;">
+            <div class="d-flex justify-content-between mb-2 small fw-bold">
+              <span>Maintenance Progress:</span>
+              <span class="text-success">85% Complete</span>
+            </div>
+            <div class="progress mb-3" style="height: 8px;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%; background-color: var(--smart-blue);"></div>
+            </div>
+            <div class="small text-muted"><i class="bi bi-clock me-1"></i> Estimated completion: 25 minutes</div>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="tel:+18005557645" class="btn-smart-primary"><i class="bi bi-telephone-fill"></i> Call On-Call Coordinator</a>
+            <a href="../index.html" class="btn-smart-secondary"><i class="bi bi-arrow-repeat"></i> Try Reloading</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-3 text-center border-top small text-muted" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+    &copy; 2026 SmartSmile Orthodontic Clinic.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

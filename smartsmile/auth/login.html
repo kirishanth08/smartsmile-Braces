@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Portal Login | SmartSmile Orthodontic Clinic</title>
+  <meta name="description" content="Log in to your private SmartSmile patient portal to track clear aligner progress, view upcoming adjustment appointments, and manage installment payments.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- SmartSmile Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="auth-page d-flex flex-column min-vh-100 justify-content-between position-relative">
+
+  <!-- Top Utility Controls (RTL & Dark Mode) -->
+  <header class="py-3 px-4 position-absolute top-0 start-0 end-0 z-3" style="background: transparent;">
+    <div class="container d-flex justify-content-end align-items-center gap-2">
+      <button class="auth-nav-btn theme-toggle-btn shadow-sm" aria-label="Toggle Dark/Light Mode" title="Toggle theme">
+        <i class="bi bi-moon-stars-fill text-primary"></i>
+      </button>
+      <button class="auth-nav-btn rtl-toggle-btn shadow-sm" aria-label="Toggle RTL/LTR Direction" title="Switch text direction">
+        <i class="bi bi-arrow-left-right text-warning"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Login Main Container (Form Only with Site Name & Logo at Top) -->
+  <main class="my-auto py-5">
+    <div class="container pt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+          <div class="smart-card auth-card p-4 p-sm-5 shadow-lg">
+            <!-- Brand Logo & Site Name at the Top of Login Form -->
+            <div class="text-center mb-4">
+              <a class="brand-logo-wrap auth-brand-badge text-decoration-none mb-3" href="../index.html">
+                <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 48px; height: 48px;">
+                  <defs>
+                    <linearGradient id="ssLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#0E273C"/>
+                      <stop offset="50%" stop-color="#163954"/>
+                      <stop offset="100%" stop-color="#24527A"/>
+                    </linearGradient>
+                    <linearGradient id="ssLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FFF2CE"/>
+                      <stop offset="45%" stop-color="#E2B15C"/>
+                      <stop offset="100%" stop-color="#B8822A"/>
+                    </linearGradient>
+                    <linearGradient id="ssToothEnamel" x1="30%" y1="0%" x2="70%" y2="100%">
+                      <stop offset="0%" stop-color="#FFFFFF"/>
+                      <stop offset="35%" stop-color="#F3F9FC"/>
+                      <stop offset="75%" stop-color="#D9EBF5"/>
+                      <stop offset="100%" stop-color="#B7D5E8"/>
+                    </linearGradient>
+                    <linearGradient id="ssToothGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="ssArchwireGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+                      <stop offset="0%" stop-color="#D5E5F2" stop-opacity="0.4"/>
+                      <stop offset="25%" stop-color="#EBF4FA"/>
+                      <stop offset="50%" stop-color="#FFFFFF"/>
+                      <stop offset="75%" stop-color="#FCE6B3"/>
+                      <stop offset="100%" stop-color="#DDA853" stop-opacity="0.5"/>
+                    </linearGradient>
+                    <linearGradient id="ssBracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FFF6D6"/>
+                      <stop offset="50%" stop-color="#E5B25D"/>
+                      <stop offset="100%" stop-color="#AD761E"/>
+                    </linearGradient>
+                    <linearGradient id="ssSmileArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#DDA853" stop-opacity="0"/>
+                      <stop offset="30%" stop-color="#E2B15C"/>
+                      <stop offset="50%" stop-color="#FFF2CE"/>
+                      <stop offset="70%" stop-color="#E2B15C"/>
+                      <stop offset="100%" stop-color="#DDA853" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="ssAmbientGlow" cx="50%" cy="45%" r="45%">
+                      <stop offset="0%" stop-color="#24527A" stop-opacity="0.8"/>
+                      <stop offset="70%" stop-color="#163954" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="#0E273C" stop-opacity="0"/>
+                    </radialGradient>
+                    <filter id="toothDepth" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+                      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#05131E" flood-opacity="0.45"/>
+                    </filter>
+                    <filter id="logoSparkleGlow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur stdDeviation="1" result="blur"/>
+                      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                    </filter>
+                  </defs>
+                  <rect class="logo-bg" width="64" height="64" rx="16" fill="url(#ssLogoBg)"/>
+                  <rect class="logo-border" x="1.2" y="1.2" width="61.6" height="61.6" rx="15" stroke="url(#ssLogoGold)" stroke-opacity="0.4" stroke-width="1.2"/>
+                  <circle cx="32" cy="30" r="22" fill="url(#ssAmbientGlow)"/>
+                  <g filter="url(#toothDepth)">
+                    <path class="logo-tooth-body" d="M32 17C35 14.5 38.5 13.5 42 14.5C47.2 16 49 21.2 48.5 27C48 33.2 44.5 39.5 38.8 42.2C35.2 43.8 33.2 43 32 41.8C30.8 43 28.8 43.8 25.2 42.2C19.5 39.5 16 33.2 15.5 27C15 21.2 16.8 16 22 14.5C25.5 13.5 29 14.5 32 17Z" fill="url(#ssToothEnamel)"/>
+                    <path class="logo-tooth-gloss" d="M22.5 15.8C25.2 14.8 28.2 15.5 31 17.5C28.5 16.5 25.5 16.2 23 17C18.5 18.5 17 22.8 17.2 27.5C17.1 24.5 18.5 17.2 22.5 15.8Z" fill="url(#ssToothGloss)"/>
+                    <path d="M41.5 15.8C38.8 14.8 35.8 15.5 33 17.5C35.5 16.5 38.5 16.2 41 17C45.5 18.5 47 22.8 46.8 27.5C46.9 24.5 45.5 17.2 41.5 15.8Z" fill="#FFFFFF" opacity="0.35"/>
+                  </g>
+                  <path class="logo-archwire" d="M11 31.5C20.5 36.8 43.5 36.8 53 31.5" stroke="url(#ssArchwireGrad)" stroke-width="2" stroke-linecap="round"/>
+                  <circle class="logo-node logo-node-1" cx="16" cy="33.2" r="1.5" fill="#EBF4FA"/>
+                  <circle class="logo-node logo-node-2" cx="48" cy="33.2" r="1.5" fill="#FCE19D"/>
+                  <g class="logo-bracket-group">
+                    <rect class="logo-bracket-pad" x="25.5" y="27" width="13" height="11" rx="2" fill="url(#ssBracketGrad)" stroke="#FFE8A3" stroke-width="0.6"/>
+                    <rect class="logo-bracket-slot" x="24.5" y="31.2" width="15" height="2.6" rx="0.6" fill="#0E273C" opacity="0.85"/>
+                    <rect class="logo-bracket-gem" x="30.5" y="31" width="3" height="3" rx="0.7" fill="#FFFFFF"/>
+                    <line x1="28.5" y1="27" x2="28.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+                    <line x1="35.5" y1="27" x2="35.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+                  </g>
+                  <path class="logo-smile-arc" d="M15 48.5C22 55.5 42 55.5 49 48.5" stroke="url(#ssSmileArcGrad)" stroke-width="2.6" stroke-linecap="round"/>
+                  <g class="logo-sparkle" filter="url(#logoSparkleGlow)">
+                    <path d="M47 11.5L48.2 14.8L51.5 16L48.2 17.2L47 20.5L45.8 17.2L42.5 16L45.8 14.8Z" fill="url(#ssLogoGold)"/>
+                    <circle cx="47" cy="16" r="1" fill="#FFFFFF"/>
+                  </g>
+                  <circle cx="51.5" cy="11.5" r="0.9" fill="#FFF2CE" opacity="0.85"/>
+                </svg>
+                <span class="brand-logo-text text-start">
+                  <span class="brand-logo-title"><span class="smart">SMART</span><span class="smile">SMILE</span><span class="dot">.</span></span>
+                  <span class="brand-logo-tagline">Orthodontics &amp; Braces</span>
+                </span>
+              </a>
+              <h1 class="fs-4 auth-title mb-1">WELCOME BACK</h1>
+              <p class="small mb-0 auth-subtext">Enter your credentials to access your patient portal.</p>
+            </div>
+
+            <!-- Login Form -->
+            <form id="patientLoginForm" class="needs-validation" novalidate onsubmit="handlePatientLogin(event, 'credentials');">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label small auth-label">Patient Email Address</label>
+                <div class="input-group">
+                  <span class="input-group-text border-end-0"><i class="bi bi-envelope"></i></span>
+                  <input type="email" class="form-control border-start-0" id="loginEmail" value="alex.morgan@smartsmile-demo.com" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <label for="loginPassword" class="form-label small auth-label mb-0">Password</label>
+                  <a href="forgot-password.html" class="small fw-semibold" style="color: #38bdf8;">Forgot password?</a>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text border-end-0"><i class="bi bi-shield-lock"></i></span>
+                  <input type="password" class="form-control border-start-0" id="loginPassword" value="••••••••••••" placeholder="Enter password" required>
+                </div>
+              </div>
+
+              <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe" checked>
+                <label class="form-check-label small auth-subtext" for="rememberMe">Remember this device</label>
+              </div>
+
+              <div class="d-grid mb-3">
+                <button type="submit" id="btnSubmitLogin" class="btn-smart-primary py-3">
+                  <i class="bi bi-box-arrow-in-right me-2"></i> Log In to My SmartSmile
+                </button>
+              </div>
+
+              <!-- Social Login Divider -->
+              <div class="d-flex align-items-center my-3">
+                <hr class="flex-grow-1 my-0 auth-divider">
+                <span class="px-3 small text-uppercase fw-semibold auth-subtext" style="font-size: 0.72rem; letter-spacing: 0.5px;">Or continue with</span>
+                <hr class="flex-grow-1 my-0 auth-divider">
+              </div>
+
+              <!-- Google and Apple Login Options -->
+              <div class="d-grid gap-2 mb-3">
+                <button type="button" class="btn btn-social-login btn-google d-flex align-items-center justify-content-center gap-2 py-2" id="btnGoogleLogin" onclick="handlePatientLogin(event, 'Google')">
+                  <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                  <span class="fw-semibold small">Continue with Google</span>
+                </button>
+                <button type="button" class="btn btn-social-login btn-apple d-flex align-items-center justify-content-center gap-2 py-2" id="btnAppleLogin" onclick="handlePatientLogin(event, 'Apple')">
+                  <i class="bi bi-apple fs-5"></i>
+                  <span class="fw-semibold small">Continue with Apple</span>
+                </button>
+              </div>
+
+              <!-- Inline Success Notification Box (Initially Hidden) -->
+              <div id="loginSuccessAlert" class="d-none alert alert-success d-flex align-items-center gap-3 p-3 my-3 rounded-3 shadow-sm" role="alert" style="background: rgba(16, 185, 129, 0.18); color: #059669; border: 1px solid rgba(16, 185, 129, 0.45) !important;">
+                <i class="bi bi-check-circle-fill fs-3 text-success flex-shrink-0"></i>
+                <div>
+                  <div class="fw-bold fs-6">Login Successful!</div>
+                  <div class="small" id="loginSuccessMsg">Welcome back, Alex Morgan. Your patient session is authenticated and active.</div>
+                </div>
+              </div>
+
+              <div class="text-center small mt-3 auth-subtext">
+                Don't have a patient account yet? <a href="register.html" class="fw-bold" style="color: #38bdf8;">Create Patient Account</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Simple Footer -->
+  <footer class="py-3 text-center border-top small auth-footer" style="background: transparent;">
+    &copy; 2026 SmartSmile Orthodontic &amp; Braces Clinic. Demonstration Portal.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    function handlePatientLogin(e, provider) {
+      if (e) e.preventDefault();
+      
+      const alertBox = document.getElementById('loginSuccessAlert');
+      const msgBox = document.getElementById('loginSuccessMsg');
+      const submitBtn = document.getElementById('btnSubmitLogin');
+      
+      let message = 'Welcome back, Alex Morgan. Your patient session is authenticated and active.';
+      if (provider === 'Google') {
+        message = 'Welcome back, Alex Morgan! You have successfully signed in with your Google Account.';
+      } else if (provider === 'Apple') {
+        message = 'Welcome back, Alex Morgan! You have successfully signed in with your Apple ID.';
+      }
+      
+      if (msgBox) msgBox.textContent = message;
+      if (alertBox) {
+        alertBox.classList.remove('d-none');
+        alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      
+      if (submitBtn) {
+        submitBtn.innerHTML = '<i class="bi bi-check2-circle me-2"></i> Logged In Successfully';
+        submitBtn.classList.remove('btn-smart-primary');
+        submitBtn.classList.add('btn-success');
+      }
+      
+      // Explicitly ensuring NO redirection happens
+      return false;
+    }
+  </script>
+</body>
+</html>

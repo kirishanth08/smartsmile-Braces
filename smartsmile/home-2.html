@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartSmile | Clinical Orthodontics &amp; Advanced Technology — Home 2</title>
+  <meta name="description" content="Explore advanced digital orthodontics, comprehensive braces vs aligners clinical comparisons, 3D treatment planning, and specialist-led smile corrections at SmartSmile.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- SmartSmile Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+
+  <!-- Global Navbar -->
+  <nav class="navbar navbar-expand-xl smart-navbar">
+    <div class="container-fluid px-3 px-lg-4 px-xl-5">
+      <a class="navbar-brand brand-logo-wrap" href="index.html">
+        <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ssLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0E273C"/>
+              <stop offset="50%" stop-color="#163954"/>
+              <stop offset="100%" stop-color="#24527A"/>
+            </linearGradient>
+            <linearGradient id="ssLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF2CE"/>
+              <stop offset="45%" stop-color="#E2B15C"/>
+              <stop offset="100%" stop-color="#B8822A"/>
+            </linearGradient>
+            <linearGradient id="ssToothEnamel" x1="30%" y1="0%" x2="70%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="35%" stop-color="#F3F9FC"/>
+              <stop offset="75%" stop-color="#D9EBF5"/>
+              <stop offset="100%" stop-color="#B7D5E8"/>
+            </linearGradient>
+            <linearGradient id="ssToothGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="ssArchwireGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" stop-color="#D5E5F2" stop-opacity="0.4"/>
+              <stop offset="25%" stop-color="#EBF4FA"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="75%" stop-color="#FCE6B3"/>
+              <stop offset="100%" stop-color="#DDA853" stop-opacity="0.5"/>
+            </linearGradient>
+            <linearGradient id="ssBracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF6D6"/>
+              <stop offset="50%" stop-color="#E5B25D"/>
+              <stop offset="100%" stop-color="#AD761E"/>
+            </linearGradient>
+            <linearGradient id="ssSmileArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E5B25D" stop-opacity="0.3"/>
+              <stop offset="20%" stop-color="#FCE19D"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="80%" stop-color="#FCE19D"/>
+              <stop offset="100%" stop-color="#E5B25D" stop-opacity="0.3"/>
+            </linearGradient>
+            <radialGradient id="ssAmbientGlow" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#1D608F" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#0E273C" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="toothDepth" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="2.5" stdDeviation="2.2" flood-color="#081826" flood-opacity="0.45"/>
+            </filter>
+            <filter id="logoSparkleGlow" x="-35%" y="-35%" width="170%" height="170%">
+              <feGaussianBlur stdDeviation="1" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+          <rect class="logo-bg" width="64" height="64" rx="16" fill="url(#ssLogoBg)"/>
+          <rect class="logo-border" x="1.2" y="1.2" width="61.6" height="61.6" rx="15" stroke="url(#ssLogoGold)" stroke-opacity="0.4" stroke-width="1.2"/>
+          <circle cx="32" cy="30" r="22" fill="url(#ssAmbientGlow)"/>
+          <g filter="url(#toothDepth)">
+            <path class="logo-tooth-body" d="M32 17C35 14.5 38.5 13.5 42 14.5C47.2 16 49 21.2 48.5 27C48 33.2 44.5 39.5 38.8 42.2C35.2 43.8 33.2 43 32 41.8C30.8 43 28.8 43.8 25.2 42.2C19.5 39.5 16 33.2 15.5 27C15 21.2 16.8 16 22 14.5C25.5 13.5 29 14.5 32 17Z" fill="url(#ssToothEnamel)"/>
+            <path class="logo-tooth-gloss" d="M22.5 15.8C25.2 14.8 28.2 15.5 31 17.5C28.5 16.5 25.5 16.2 23 17C18.5 18.5 17 22.8 17.2 27.5C17.1 24.5 18.5 17.2 22.5 15.8Z" fill="url(#ssToothGloss)"/>
+            <path d="M41.5 15.8C38.8 14.8 35.8 15.5 33 17.5C35.5 16.5 38.5 16.2 41 17C45.5 18.5 47 22.8 46.8 27.5C46.9 24.5 45.5 17.2 41.5 15.8Z" fill="#FFFFFF" opacity="0.35"/>
+          </g>
+          <path class="logo-archwire" d="M11 31.5C20.5 36.8 43.5 36.8 53 31.5" stroke="url(#ssArchwireGrad)" stroke-width="2" stroke-linecap="round"/>
+          <circle class="logo-node logo-node-1" cx="16" cy="33.2" r="1.5" fill="#EBF4FA"/>
+          <circle class="logo-node logo-node-2" cx="48" cy="33.2" r="1.5" fill="#FCE19D"/>
+          <g class="logo-bracket-group">
+            <rect class="logo-bracket-pad" x="25.5" y="27" width="13" height="11" rx="2" fill="url(#ssBracketGrad)" stroke="#FFE8A3" stroke-width="0.6"/>
+            <rect class="logo-bracket-slot" x="24.5" y="31.2" width="15" height="2.6" rx="0.6" fill="#0E273C" opacity="0.85"/>
+            <rect class="logo-bracket-gem" x="30.5" y="31" width="3" height="3" rx="0.7" fill="#FFFFFF"/>
+            <line x1="28.5" y1="27" x2="28.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+            <line x1="35.5" y1="27" x2="35.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+          </g>
+          <path class="logo-smile-arc" d="M15 48.5C22 55.5 42 55.5 49 48.5" stroke="url(#ssSmileArcGrad)" stroke-width="2.6" stroke-linecap="round"/>
+          <g class="logo-sparkle" filter="url(#logoSparkleGlow)">
+            <path d="M47 11.5L48.2 14.8L51.5 16L48.2 17.2L47 20.5L45.8 17.2L42.5 16L45.8 14.8Z" fill="url(#ssLogoGold)"/>
+            <circle cx="47" cy="16" r="1" fill="#FFFFFF"/>
+          </g>
+          <circle cx="51.5" cy="11.5" r="0.9" fill="#FFF2CE" opacity="0.85"/>
+        </svg>
+        <span class="brand-logo-text">
+          <span class="brand-logo-title"><span class="smart">SMART</span><span class="smile">SMILE</span><span class="dot">.</span></span>
+          <span class="brand-logo-tagline">Orthodontics &amp; Braces</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#smartNavbarNav" aria-controls="smartNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="smartNavbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu border-0 shadow-md">
+              <li><a class="dropdown-item" href="index.html">Home 1 — Smile Transformation</a></li>
+              <li><a class="dropdown-item active" href="home-2.html">Home 2 — Clinical &amp; Editorial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="treatments.html">Treatments</a></li>
+          <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions-wrap ms-xl-auto">
+          <!-- Theme Toggle -->
+          <button class="nav-util-btn theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill text-primary"></i>
+          </button>
+          <!-- RTL Toggle -->
+          <button class="nav-util-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction" title="Switch text direction">
+            <i class="bi bi-arrow-left-right text-warning"></i>
+          </button>
+          <!-- Patient Portal link -->
+          <a href="patient-dashboard/dashboard.html" class="nav-util-btn nav-portal-btn" aria-label="Access Patient Portal" title="Access Patient Portal">
+            <i class="bi bi-person-fill text-primary"></i>
+          </a>
+                    <!-- Login Option -->
+          <a href="auth/login.html" class="btn-nav-login" title="Patient & Staff Login">
+            <i class="bi bi-box-arrow-in-right"></i> <span>Login</span>
+          </a>
+          <!-- Primary CTA Button -->
+          <a href="consultation.html" class="btn-smart-primary btn-nav-cta">
+            <i class="bi bi-calendar-check-fill"></i> <span>Book Consultation</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO (EDITORIAL & SERVICE ORIENTED)
+       Asymmetrical editorial layout, large typography, deep clinical focus
+       ========================================================================== -->
+  <section class="section-padding position-relative overflow-hidden hero-section-bg hero-bg-home-2">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="hero-text-panel">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background: rgba(221, 168, 83, 0.2); border: 1px solid var(--smile-gold);">
+              <i class="bi bi-cpu-fill text-warning"></i>
+              <span class="small fw-bold" style="color: var(--smile-gold); letter-spacing: 0.5px;">EVIDENCE-BASED ORTHODONTIC SCIENCE</span>
+            </div>
+            <h1 class="display-3 fw-extrabold mb-4" style="color: var(--warm-ivory); letter-spacing: -1.5px; line-height: 1.1;">
+              SMART TREATMENT. <br>
+              <span style="color: var(--smile-gold);">CONFIDENT SMILES.</span>
+            </h1>
+            <p class="lead mb-4" style="color: rgba(243, 243, 224, 0.9); max-width: 580px;">
+              Harnessing precision 3D CAD modeling, clinical biomechanics, and clear aligner engineering to achieve optimal dental health, facial balance, and lifelong stability.
+            </p>
+
+            <div class="d-flex flex-wrap align-items-center gap-3 mb-5">
+              <a href="consultation.html" class="btn-smart-primary">
+                <i class="bi bi-clipboard2-pulse-fill"></i> Schedule Clinical Consultation
+              </a>
+              <a href="treatments.html" class="btn-smart-secondary">
+                <i class="bi bi-layers-fill"></i> Explore Clinical Services
+              </a>
+            </div>
+
+            <div class="row g-4 pt-3 border-top" style="border-color: rgba(243, 243, 224, 0.15) !important;">
+              <div class="col-sm-4">
+                <div class="h2 fw-bold mb-0" style="color: var(--smile-gold);">0.01 mm</div>
+                <div class="small" style="color: rgba(243, 243, 224, 0.75);">Micron Scan Precision</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="h2 fw-bold mb-0" style="color: var(--warm-ivory);">100%</div>
+                <div class="small" style="color: rgba(243, 243, 224, 0.75);">Orthodontist-Led Care</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="h2 fw-bold mb-0" style="color: var(--smile-gold);">40+ Yrs</div>
+                <div class="small" style="color: rgba(243, 243, 224, 0.75);">Cumulative Clinical Trust</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <div class="rounded-4 overflow-hidden shadow-lg border" style="border-color: rgba(243, 243, 224, 0.2);">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1100&q=80" 
+                   alt="Modern 3D digital orthodontic scanning suite" 
+                   class="w-100 object-fit-cover" style="min-height: 440px;">
+            </div>
+            <div class="position-absolute p-3 rounded-3 shadow-lg" 
+                 style="bottom: 20px; right: -15px; background: rgba(24, 59, 78, 0.95); backdrop-filter: blur(8px); border: 1px solid var(--smile-gold); max-width: 250px;">
+              <div class="small fw-bold text-white mb-1"><i class="bi bi-check2-circle text-warning me-1"></i> Intraoral 3D Scans</div>
+              <div style="font-size: 0.78rem; color: rgba(243, 243, 224, 0.8);">Real-time digital simulation predicts exact orthodontic movements prior to attachment.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: SMILE TRANSFORMATION SHOWCASE
+       Detailed case breakdowns with clinical metrics
+       ========================================================================== -->
+  <section class="section-padding section-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Clinical Case Documentation</span>
+        <h2 class="section-title">PRECISION SMILE TRANSFORMATIONS.</h2>
+        <p class="section-desc">
+          Browse verified clinical orthodontic corrections addressing overcrowding, severe overjet, deep bites, and midline discrepancies.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Case 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="smart-card">
+            <div style="height: 220px; overflow: hidden; position: relative;">
+              <img src="assets/images/cases/card-case-adult-aligner.jpg" alt="Adult Clear Aligner Correction" class="w-100 h-100 object-fit-cover">
+              <span class="smart-badge smart-badge-gold position-absolute" style="top: 12px; left: 12px;">Class II Deep Bite</span>
+            </div>
+            <div class="smart-card-body">
+              <h3 class="smart-card-title fs-5">Adult Clear Aligner Correction</h3>
+              <p class="smart-card-text">
+                Corrected a 5.5mm overjet and moderate lower crowding utilizing custom staged polyurethane aligners with precision attachments.
+              </p>
+              <div class="d-flex justify-content-between align-items-center small text-muted mb-3 pb-2 border-bottom">
+                <span>Duration: <strong style="color: var(--text-primary);">14 Months</strong></span>
+                <span>Trays: <strong style="color: var(--text-primary);">28 Stages</strong></span>
+              </div>
+              <div class="smart-card-action">
+                <span class="small fw-bold" style="color: var(--smart-blue);"><i class="bi bi-check-all"></i> Stable Retention</span>
+                <a href="case-clear-aligners.html" class="btn-smart-secondary">View Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="smart-card">
+            <div style="height: 220px; overflow: hidden; position: relative;">
+              <img src="assets/images/cases/card-case-ceramic-braces.jpg" alt="Aesthetic Ceramic Braces Spacing Case" class="w-100 h-100 object-fit-cover">
+              <span class="smart-badge smart-badge-blue position-absolute" style="top: 12px; left: 12px;">Maxillary Diastema</span>
+            </div>
+            <div class="smart-card-body">
+              <h3 class="smart-card-title fs-5">Aesthetic Ceramic Braces</h3>
+              <p class="smart-card-text">
+                Closed a prominent 4mm midline diastema and aligned rotated incisors without compromising natural enamel aesthetics.
+              </p>
+              <div class="d-flex justify-content-between align-items-center small text-muted mb-3 pb-2 border-bottom">
+                <span>Duration: <strong style="color: var(--text-primary);">12 Months</strong></span>
+                <span>Appliances: <strong style="color: var(--text-primary);">Ceramic 3M</strong></span>
+              </div>
+              <div class="smart-card-action">
+                <span class="small fw-bold" style="color: var(--smart-blue);"><i class="bi bi-check-all"></i> Lingual Retained</span>
+                <a href="case-ceramic-braces.html" class="btn-smart-secondary">View Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="smart-card">
+            <div style="height: 220px; overflow: hidden; position: relative;">
+              <img src="assets/images/cases/card-case-teen-alignment.jpg" alt="Teen Non-Extraction Alignment Case" class="w-100 h-100 object-fit-cover">
+              <span class="smart-badge smart-badge-gold position-absolute" style="top: 12px; left: 12px;">Severe Crowding</span>
+            </div>
+            <div class="smart-card-body">
+              <h3 class="smart-card-title fs-5">Teen Non-Extraction Alignment</h3>
+              <p class="smart-card-text">
+                Achieved comprehensive arch development to relieve severe dental crowding without the need for premolar extractions.
+              </p>
+              <div class="d-flex justify-content-between align-items-center small text-muted mb-3 pb-2 border-bottom">
+                <span>Duration: <strong style="color: var(--text-primary);">18 Months</strong></span>
+                <span>Type: <strong style="color: var(--text-primary);">Low-Friction Braces</strong></span>
+              </div>
+              <div class="smart-card-action">
+                <span class="small fw-bold" style="color: var(--smart-blue);"><i class="bi bi-check-all"></i> Balanced Occlusion</span>
+                <a href="case-teen-alignment.html" class="btn-smart-secondary">View Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: BRACES VS ALIGNERS DEEP COMPARISON MATRIX
+       Detail-oriented clinical decision guide
+       ========================================================================== -->
+  <section class="section-padding section-warm">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Clinical Decision Guide</span>
+        <h2 class="section-title">BRACES VS. CLEAR ALIGNERS COMPARISON.</h2>
+        <p class="section-desc">
+          Compare the biomechanical and lifestyle factors of modern fixed braces versus removable clear aligners to understand which aligns with your lifestyle.
+        </p>
+      </div>
+
+      <div class="table-responsive shadow-sm rounded-4 overflow-hidden border" style="border-color: var(--border-color); background-color: var(--card-bg);">
+        <table class="table table-hover align-middle mb-0" style="background-color: var(--card-bg); color: var(--text-primary);">
+          <thead style="background-color: var(--deep-navy); color: var(--warm-ivory);">
+            <tr>
+              <th scope="col" class="py-3 px-4 fs-6" style="width: 25%;">Evaluation Metric</th>
+              <th scope="col" class="py-3 px-4 fs-6" style="width: 37.5%; color: var(--smile-gold);"><i class="bi bi-shield-shaded me-1"></i> Traditional &amp; Ceramic Braces</th>
+              <th scope="col" class="py-3 px-4 fs-6" style="width: 37.5%; color: #72a2db;"><i class="bi bi-gem me-1"></i> Clear Aligners</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold px-4 py-3"><i class="bi bi-eye-fill text-muted me-2"></i> Aesthetics &amp; Discretion</td>
+              <td class="px-4 py-3 text-secondary">Visible brackets (metal) or subtle tooth-toned ceramic. Noticeable up close.</td>
+              <td class="px-4 py-3 text-secondary"><strong style="color: var(--smart-blue);">Virtually Invisible</strong> transparent medical-grade polymers.</td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4 py-3"><i class="bi bi-hand-thumbs-up-fill text-muted me-2"></i> Removability &amp; Eating</td>
+              <td class="px-4 py-3 text-secondary">Fixed 24/7. Avoid sticky, very hard, or crunchy foods to protect brackets.</td>
+              <td class="px-4 py-3 text-secondary"><strong style="color: var(--smart-blue);">Fully Removable</strong> during meals. No dietary restrictions whatsoever.</td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4 py-3"><i class="bi bi-brush-fill text-muted me-2"></i> Oral Hygiene Routine</td>
+              <td class="px-4 py-3 text-secondary">Requires orthodontic floss threaders and interdental brushes around wires.</td>
+              <td class="px-4 py-3 text-secondary"><strong style="color: var(--smart-blue);">Standard Flossing &amp; Brushing</strong>. Simple aligner cleaning rinse.</td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4 py-3"><i class="bi bi-bullseye text-muted me-2"></i> Biomechanical Range</td>
+              <td class="px-4 py-3 text-secondary"><strong style="color: var(--smart-blue);">Ideal for All Complexities</strong>: Severe rotations, skeletal bites, surgical cases.</td>
+              <td class="px-4 py-3 text-secondary">Excellent for mild to moderately severe crowding, gaps, and overbites.</td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4 py-3"><i class="bi bi-calendar2-range-fill text-muted me-2"></i> Clinic Appointment Cadence</td>
+              <td class="px-4 py-3 text-secondary">Adjustment every 4 to 6 weeks for archwire adjustments.</td>
+              <td class="px-4 py-3 text-secondary">Check-ins every 8 to 10 weeks; progress trackable via patient dashboard.</td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4 py-3"><i class="bi bi-person-check-fill text-muted me-2"></i> Patient Compliance Factor</td>
+              <td class="px-4 py-3 text-secondary">Zero compliance worries; appliances work non-stop around the clock.</td>
+              <td class="px-4 py-3 text-secondary">Requires disciplined wear for 20–22 hours daily for optimal velocity.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 p-3 rounded-3 demo-disclaimer-box text-center">
+        *Disclaimer: Final treatment appropriateness is diagnosed individually during your SmartSmile comprehensive examination.
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: WHY PATIENTS CHOOSE SMARTSMILE
+       Bento layout highlighting clinical superiority
+       ========================================================================== -->
+  <section class="section-padding section-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Clinical Advantages</span>
+        <h2 class="section-title">WHY PATIENTS CHOOSE SMARTSMILE.</h2>
+        <p class="section-desc">
+          Four clinical pillars that establish SmartSmile as the benchmark for personalized orthodontic treatment.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Pillar 1 -->
+        <div class="col-lg-6">
+          <div class="smart-card p-4 h-100 d-flex flex-row gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: var(--gold-tint); color: var(--smile-gold); font-size: 1.6rem; flex-shrink: 0;">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <div>
+              <h3 class="fs-5 fw-bold mb-2" style="color: var(--text-primary);">Intraoral 3D Digital Precision</h3>
+              <p class="smart-card-text mb-0">
+                Our optical scanning eliminates uncomfortable putty impressions. Over 6,000 data points capture your exact dental anatomy in less than three minutes with sub-millimeter precision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="col-lg-6">
+          <div class="smart-card p-4 h-100 d-flex flex-row gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: var(--blue-tint); color: var(--smart-blue); font-size: 1.6rem; flex-shrink: 0;">
+              <i class="bi bi-person-badge-fill"></i>
+            </div>
+            <div>
+              <h3 class="fs-5 fw-bold mb-2" style="color: var(--text-primary);">Specialist Orthodontists Only</h3>
+              <p class="smart-card-text mb-0">
+                Unlike direct-to-consumer mail kits, every treatment plan is authored and overseen directly by certified orthodontists with 3+ years of postdoctoral alignment training.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="col-lg-6">
+          <div class="smart-card p-4 h-100 d-flex flex-row gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: var(--gold-tint); color: var(--smile-gold); font-size: 1.6rem; flex-shrink: 0;">
+              <i class="bi bi-cash-coin"></i>
+            </div>
+            <div>
+              <h3 class="fs-5 fw-bold mb-2" style="color: var(--text-primary);">Zero Hidden Fees &amp; Flexible Financing</h3>
+              <p class="smart-card-text mb-0">
+                Transparent all-inclusive pricing covering initial scans, emergency visits, all aligners, attachments, debonding, and your first set of post-treatment retainers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="col-lg-6">
+          <div class="smart-card p-4 h-100 d-flex flex-row gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: var(--blue-tint); color: var(--smart-blue); font-size: 1.6rem; flex-shrink: 0;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+              <h3 class="fs-5 fw-bold mb-2" style="color: var(--text-primary);">Lifelong Retention Commitment</h3>
+              <p class="smart-card-text mb-0">
+                Our orthodontic care continues well beyond appliance removal. We monitor your dental stability with 12-month post-completion check-ups to guarantee lasting results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: PATIENT STORIES & CLINICAL OUTCOMES
+       Detailed narratives with verified reviews
+       ========================================================================== -->
+  <section class="section-padding section-warm">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Real Patient Journeys</span>
+        <h2 class="section-title">STORIES OF TRANSFORMED CONFIDENCE.</h2>
+        <p class="section-desc">
+          Hear how personalized orthodontic treatment gave our adult and teen patients the confidence to smile freely in their professional and personal lives.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Story 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="smart-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sarah J." class="rounded-circle object-fit-cover" style="width: 56px; height: 56px; border: 2px solid var(--smile-gold);">
+              <div>
+                <h4 class="fs-6 fw-bold mb-0" style="color: var(--text-primary);">Sarah Jenkins</h4>
+                <div class="small text-muted">Architect • Clear Aligners</div>
+              </div>
+            </div>
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="smart-card-text">
+              “As a client-facing architect, I was hesitant about braces at 32. Dr. Carter designed a discreet 12-month clear aligner plan. My colleagues barely noticed, but the results completely changed how I present in client meetings.”
+            </p>
+            <div class="small fw-semibold mt-auto" style="color: var(--smile-gold);">
+              <i class="bi bi-clock-history"></i> Completed in 12 Months
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="smart-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David K." class="rounded-circle object-fit-cover" style="width: 56px; height: 56px; border: 2px solid var(--smart-blue);">
+              <div>
+                <h4 class="fs-6 fw-bold mb-0" style="color: var(--text-primary);">David Kim</h4>
+                <div class="small text-muted">Software Engineer • Ceramic Braces</div>
+              </div>
+            </div>
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="smart-card-text">
+              “I had a severe crossbite that caused jaw tension when chewing. Dr. Vance guided me through ceramic braces with clear monthly payment installments. My bite is now fully aligned and chewing is completely pain-free.”
+            </p>
+            <div class="small fw-semibold mt-auto" style="color: var(--smile-gold);">
+              <i class="bi bi-clock-history"></i> Completed in 16 Months
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="smart-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Maya T." class="rounded-circle object-fit-cover" style="width: 56px; height: 56px; border: 2px solid var(--smile-gold);">
+              <div>
+                <h4 class="fs-6 fw-bold mb-0" style="color: var(--text-primary);">Maya &amp; Parent Laura</h4>
+                <div class="small text-muted">High School Student • Teen Ortho</div>
+              </div>
+            </div>
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="smart-card-text">
+              “SmartSmile made braces enjoyable for my daughter. Dr. Rostova explained every step kindly, and the patient portal allowed us to track her progress and view adjustment dates anytime from our phones.”
+            </p>
+            <div class="small fw-semibold mt-auto" style="color: var(--smile-gold);">
+              <i class="bi bi-clock-history"></i> Completed in 14 Months
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: CONSULTATION CTA
+       Deep Navy editorial CTA with Gold accents
+       ========================================================================== -->
+  
+  <!-- ==========================================================================
+       SECTION: TREATMENT COMPARISON MATRIX (CLINICAL BREAKDOWN)
+       ========================================================================== -->
+  <section class="section-padding section-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Clinical Decision Matrix</span>
+        <h2 class="section-title">COMPARING YOUR TREATMENT OPTIONS.</h2>
+        <p class="section-desc">
+          Every appliance has distinct biomechanical advantages. Review our clinical comparison matrix to understand what suits your lifestyle and orthodontic goals.
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-smart table-hover align-middle mb-0">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 25%;">Orthodontic System</th>
+              <th scope="col">Aesthetic Visibility</th>
+              <th scope="col">Removability</th>
+              <th scope="col">Diet &amp; Eating</th>
+              <th scope="col">Average Duration</th>
+              <th scope="col">Best Suited For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold"><i class="bi bi-gem text-primary me-2"></i> Clear Aligners</td>
+              <td><span class="badge bg-success bg-opacity-10 text-success">Virtually Invisible</span></td>
+              <td>Removable (22 hrs/day)</td>
+              <td>No Restrictions</td>
+              <td>9–18 Months</td>
+              <td>Adults &amp; Teens, Mild to Complex Crowding</td>
+            </tr>
+            <tr>
+              <td class="fw-bold"><i class="bi bi-circle-fill text-warning me-2"></i> Ceramic Braces</td>
+              <td><span class="badge bg-info bg-opacity-10 text-info">Discreet (Tooth-Colored)</span></td>
+              <td>Fixed Appliance</td>
+              <td>Avoid Hard/Sticky Foods</td>
+              <td>14–22 Months</td>
+              <td>Moderate to Severe Bite Alignments</td>
+            </tr>
+            <tr>
+              <td class="fw-bold"><i class="bi bi-shield-fill text-secondary me-2"></i> Traditional Metal</td>
+              <td><span class="badge bg-secondary bg-opacity-10 text-secondary">Visible Stainless Steel</span></td>
+              <td>Fixed Appliance</td>
+              <td>Avoid Hard/Sticky Foods</td>
+              <td>16–24 Months</td>
+              <td>Complex Rotations, Severe Overbites, Teens</td>
+            </tr>
+            <tr>
+              <td class="fw-bold"><i class="bi bi-stars text-warning me-2"></i> Lingual (Behind Teeth)</td>
+              <td><span class="badge bg-success bg-opacity-10 text-success">100% Hidden</span></td>
+              <td>Fixed to Inner Enamel</td>
+              <td>Avoid Crunchy Items</td>
+              <td>15–24 Months</td>
+              <td>Actors, Public Figures, Hidden Alignment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: BIOMECHANICS & BONE REMODELING SCIENCE
+       ========================================================================== -->
+  <section class="section-padding section-warm">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="smart-badge smart-badge-gold mb-3">Biological Orthodontics</span>
+          <h2 class="display-6 fw-extrabold mb-3" style="color: var(--deep-navy);">
+            THE SCIENCE OF PHYSIOLOGICAL TOOTH MOVEMENT.
+          </h2>
+          <p class="lead mb-4" style="color: var(--text-secondary); font-size: 1rem;">
+            Teeth do not move through brute force—they move through biological cellular remodeling. Gentle continuous pressure activates microscopic cells that safely reshape bone.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="smart-card p-3 h-100">
+                <div class="fw-bold text-primary mb-1"><i class="bi bi-arrow-down-right-circle me-1"></i> Osteoclasts (Pressure Side)</div>
+                <p class="small text-secondary mb-0">Resorb bone cells gently where tooth pressure is applied, creating space for controlled movement.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="smart-card p-3 h-100">
+                <div class="fw-bold text-success mb-1"><i class="bi bi-arrow-up-right-circle me-1"></i> Osteoblasts (Tension Side)</div>
+                <p class="small text-secondary mb-0">Deposit fresh mineralized bone behind the moving root, locking the tooth into permanent stability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden shadow-lg border" style="border-color: var(--border-color);">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=80" alt="Orthodontic clinical biomechanics illustration" class="w-100 object-fit-cover" style="min-height: 380px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section-padding section-navy text-center position-relative">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <span class="smart-badge smart-badge-gold mb-3">Precision Dental Assessment</span>
+          <h2 class="display-5 fw-extrabold mb-3" style="color: var(--warm-ivory);">
+            TAKE THE FIRST STEP TOWARDS ALIGNMENT.
+          </h2>
+          <p class="lead mb-4" style="color: rgba(243, 243, 224, 0.85);">
+            Book your comprehensive digital orthodontic consultation today. Discover how custom clear aligners or precision braces can transform your smile.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="consultation.html" class="btn-smart-primary">
+              <i class="bi bi-calendar2-check-fill"></i> Book a Consultation
+            </a>
+            <a href="patient-dashboard/dashboard.html" class="btn-smart-secondary">
+              <i class="bi bi-speedometer2"></i> Open Patient Portal
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="smart-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <a class="brand-logo-wrap mb-3" href="index.html">
+            <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ssLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0E273C"/>
+              <stop offset="50%" stop-color="#163954"/>
+              <stop offset="100%" stop-color="#24527A"/>
+            </linearGradient>
+            <linearGradient id="ssLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF2CE"/>
+              <stop offset="45%" stop-color="#E2B15C"/>
+              <stop offset="100%" stop-color="#B8822A"/>
+            </linearGradient>
+            <linearGradient id="ssToothEnamel" x1="30%" y1="0%" x2="70%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="35%" stop-color="#F3F9FC"/>
+              <stop offset="75%" stop-color="#D9EBF5"/>
+              <stop offset="100%" stop-color="#B7D5E8"/>
+            </linearGradient>
+            <linearGradient id="ssToothGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="ssArchwireGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" stop-color="#D5E5F2" stop-opacity="0.4"/>
+              <stop offset="25%" stop-color="#EBF4FA"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="75%" stop-color="#FCE6B3"/>
+              <stop offset="100%" stop-color="#DDA853" stop-opacity="0.5"/>
+            </linearGradient>
+            <linearGradient id="ssBracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF6D6"/>
+              <stop offset="50%" stop-color="#E5B25D"/>
+              <stop offset="100%" stop-color="#AD761E"/>
+            </linearGradient>
+            <linearGradient id="ssSmileArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E5B25D" stop-opacity="0.3"/>
+              <stop offset="20%" stop-color="#FCE19D"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="80%" stop-color="#FCE19D"/>
+              <stop offset="100%" stop-color="#E5B25D" stop-opacity="0.3"/>
+            </linearGradient>
+            <radialGradient id="ssAmbientGlow" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#1D608F" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#0E273C" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="toothDepth" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="2.5" stdDeviation="2.2" flood-color="#081826" flood-opacity="0.45"/>
+            </filter>
+            <filter id="logoSparkleGlow" x="-35%" y="-35%" width="170%" height="170%">
+              <feGaussianBlur stdDeviation="1" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+          <rect class="logo-bg" width="64" height="64" rx="16" fill="url(#ssLogoBg)"/>
+          <rect class="logo-border" x="1.2" y="1.2" width="61.6" height="61.6" rx="15" stroke="url(#ssLogoGold)" stroke-opacity="0.4" stroke-width="1.2"/>
+          <circle cx="32" cy="30" r="22" fill="url(#ssAmbientGlow)"/>
+          <g filter="url(#toothDepth)">
+            <path class="logo-tooth-body" d="M32 17C35 14.5 38.5 13.5 42 14.5C47.2 16 49 21.2 48.5 27C48 33.2 44.5 39.5 38.8 42.2C35.2 43.8 33.2 43 32 41.8C30.8 43 28.8 43.8 25.2 42.2C19.5 39.5 16 33.2 15.5 27C15 21.2 16.8 16 22 14.5C25.5 13.5 29 14.5 32 17Z" fill="url(#ssToothEnamel)"/>
+            <path class="logo-tooth-gloss" d="M22.5 15.8C25.2 14.8 28.2 15.5 31 17.5C28.5 16.5 25.5 16.2 23 17C18.5 18.5 17 22.8 17.2 27.5C17.1 24.5 18.5 17.2 22.5 15.8Z" fill="url(#ssToothGloss)"/>
+            <path d="M41.5 15.8C38.8 14.8 35.8 15.5 33 17.5C35.5 16.5 38.5 16.2 41 17C45.5 18.5 47 22.8 46.8 27.5C46.9 24.5 45.5 17.2 41.5 15.8Z" fill="#FFFFFF" opacity="0.35"/>
+          </g>
+          <path class="logo-archwire" d="M11 31.5C20.5 36.8 43.5 36.8 53 31.5" stroke="url(#ssArchwireGrad)" stroke-width="2" stroke-linecap="round"/>
+          <circle class="logo-node logo-node-1" cx="16" cy="33.2" r="1.5" fill="#EBF4FA"/>
+          <circle class="logo-node logo-node-2" cx="48" cy="33.2" r="1.5" fill="#FCE19D"/>
+          <g class="logo-bracket-group">
+            <rect class="logo-bracket-pad" x="25.5" y="27" width="13" height="11" rx="2" fill="url(#ssBracketGrad)" stroke="#FFE8A3" stroke-width="0.6"/>
+            <rect class="logo-bracket-slot" x="24.5" y="31.2" width="15" height="2.6" rx="0.6" fill="#0E273C" opacity="0.85"/>
+            <rect class="logo-bracket-gem" x="30.5" y="31" width="3" height="3" rx="0.7" fill="#FFFFFF"/>
+            <line x1="28.5" y1="27" x2="28.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+            <line x1="35.5" y1="27" x2="35.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+          </g>
+          <path class="logo-smile-arc" d="M15 48.5C22 55.5 42 55.5 49 48.5" stroke="url(#ssSmileArcGrad)" stroke-width="2.6" stroke-linecap="round"/>
+          <g class="logo-sparkle" filter="url(#logoSparkleGlow)">
+            <path d="M47 11.5L48.2 14.8L51.5 16L48.2 17.2L47 20.5L45.8 17.2L42.5 16L45.8 14.8Z" fill="url(#ssLogoGold)"/>
+            <circle cx="47" cy="16" r="1" fill="#FFFFFF"/>
+          </g>
+          <circle cx="51.5" cy="11.5" r="0.9" fill="#FFF2CE" opacity="0.85"/>
+        </svg>
+            <span class="brand-logo-text">
+              <span class="brand-logo-title"><span class="smart">SMART</span><span class="smile">SMILE</span><span class="dot">.</span></span>
+              <span class="brand-logo-tagline">Orthodontics &amp; Braces</span>
+            </span>
+          </a>
+          <p class="small" style="color: rgba(243, 243, 224, 0.75);">
+            SmartSmile is a modern orthodontic and braces clinic focused on precision digital alignment, clear aligners, and lifelong smile health.
+          </p>
+                    <div class="d-flex gap-2 mt-3">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (formerly Twitter)" title="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="before-after.html">Before &amp; After</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="blog.html">Orthodontic Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Treatments</h5>
+          <ul>
+            <li><a href="treatments.html">Traditional Metal Braces</a></li>
+            <li><a href="treatments.html">Ceramic Tooth-Colored Braces</a></li>
+            <li><a href="treatment-details.html">Clear Aligners Therapy</a></li>
+            <li><a href="treatments.html">Post-Treatment Retainers</a></li>
+            <li><a href="treatments.html">Early Orthodontic Care (Age 7+)</a></li>
+            <li><a href="treatments.html">Adult Alignment Solutions</a></li>
+            <li><a href="treatments.html">Teen Non-Extraction Braces</a></li>
+            <li><a href="treatments.html">3D Digital Smile Simulation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Patient Portal &amp; Clinic</h5>
+          <ul>
+            <li><a href="patient-dashboard/dashboard.html"><i class="bi bi-speedometer2 me-1 text-warning"></i> Patient Portal Login</a></li>
+            <li><a href="patient-dashboard/appointments.html"><i class="bi bi-calendar3 me-1 text-warning"></i> Schedule Adjustment</a></li>
+            <li><a href="patient-dashboard/treatment-progress.html"><i class="bi bi-graph-up-arrow me-1 text-warning"></i> Track Treatment Progress</a></li>
+            <li><a href="patient-dashboard/payment-installments.html"><i class="bi bi-credit-card me-1 text-warning"></i> Payment Installments</a></li>
+          </ul>
+          <div class="footer-clinic-card">
+            <div class="small fw-bold text-white mb-1"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Clinic Address:</div>
+            <div class="small" style="color: rgba(243, 243, 224, 0.75);">450 Orthodontic Boulevard, Suite 300, Medical Plaza</div>
+            <div class="small mt-1"><i class="bi bi-clock-fill text-warning me-1"></i> Mon�Sat: 8:00 AM � 7:00 PM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>
+          &copy; 2026 SmartSmile Orthodontic &amp; Braces Clinic. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 small">
+          <a href="#" class="text-white-50">Privacy Policy</a>
+          <a href="#" class="text-white-50">Terms of Service</a>
+          <a href="#" class="text-white-50">Accessibility</a>
+        </div>
+      </div>
+      <div class="mt-2 text-center" style="font-size: 0.72rem; color: rgba(243, 243, 224, 0.5);">
+        *Demonstration template content for orthodontic dental clinics. Individual treatment results and timelines vary per patient diagnosis.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

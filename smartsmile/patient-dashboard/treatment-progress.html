@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treatment Progress | My SmartSmile Patient Portal</title>
+  <meta name="description" content="Visual stage-by-stage orthodontic journey tracking for patient Alex Morgan. Active 62% alignment milestone with Dr. Olivia Carter.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- SmartSmile Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dashboard-sidebar">
+      <div class="mb-4">
+        <a class="brand-logo-wrap text-white" href="../index.html">
+          <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ssLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0E273C"/>
+              <stop offset="50%" stop-color="#163954"/>
+              <stop offset="100%" stop-color="#24527A"/>
+            </linearGradient>
+            <linearGradient id="ssLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF2CE"/>
+              <stop offset="45%" stop-color="#E2B15C"/>
+              <stop offset="100%" stop-color="#B8822A"/>
+            </linearGradient>
+            <linearGradient id="ssToothEnamel" x1="30%" y1="0%" x2="70%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="35%" stop-color="#F3F9FC"/>
+              <stop offset="75%" stop-color="#D9EBF5"/>
+              <stop offset="100%" stop-color="#B7D5E8"/>
+            </linearGradient>
+            <linearGradient id="ssToothGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="ssArchwireGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" stop-color="#D5E5F2" stop-opacity="0.4"/>
+              <stop offset="25%" stop-color="#EBF4FA"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="75%" stop-color="#FCE6B3"/>
+              <stop offset="100%" stop-color="#DDA853" stop-opacity="0.5"/>
+            </linearGradient>
+            <linearGradient id="ssBracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF6D6"/>
+              <stop offset="50%" stop-color="#E5B25D"/>
+              <stop offset="100%" stop-color="#AD761E"/>
+            </linearGradient>
+            <linearGradient id="ssSmileArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E5B25D" stop-opacity="0.3"/>
+              <stop offset="20%" stop-color="#FCE19D"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="80%" stop-color="#FCE19D"/>
+              <stop offset="100%" stop-color="#E5B25D" stop-opacity="0.3"/>
+            </linearGradient>
+            <radialGradient id="ssAmbientGlow" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#1D608F" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#0E273C" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="toothDepth" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="2.5" stdDeviation="2.2" flood-color="#081826" flood-opacity="0.45"/>
+            </filter>
+            <filter id="logoSparkleGlow" x="-35%" y="-35%" width="170%" height="170%">
+              <feGaussianBlur stdDeviation="1" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+          <rect class="logo-bg" width="64" height="64" rx="16" fill="url(#ssLogoBg)"/>
+          <rect class="logo-border" x="1.2" y="1.2" width="61.6" height="61.6" rx="15" stroke="url(#ssLogoGold)" stroke-opacity="0.4" stroke-width="1.2"/>
+          <circle cx="32" cy="30" r="22" fill="url(#ssAmbientGlow)"/>
+          <g filter="url(#toothDepth)">
+            <path class="logo-tooth-body" d="M32 17C35 14.5 38.5 13.5 42 14.5C47.2 16 49 21.2 48.5 27C48 33.2 44.5 39.5 38.8 42.2C35.2 43.8 33.2 43 32 41.8C30.8 43 28.8 43.8 25.2 42.2C19.5 39.5 16 33.2 15.5 27C15 21.2 16.8 16 22 14.5C25.5 13.5 29 14.5 32 17Z" fill="url(#ssToothEnamel)"/>
+            <path class="logo-tooth-gloss" d="M22.5 15.8C25.2 14.8 28.2 15.5 31 17.5C28.5 16.5 25.5 16.2 23 17C18.5 18.5 17 22.8 17.2 27.5C17.1 24.5 18.5 17.2 22.5 15.8Z" fill="url(#ssToothGloss)"/>
+            <path d="M41.5 15.8C38.8 14.8 35.8 15.5 33 17.5C35.5 16.5 38.5 16.2 41 17C45.5 18.5 47 22.8 46.8 27.5C46.9 24.5 45.5 17.2 41.5 15.8Z" fill="#FFFFFF" opacity="0.35"/>
+          </g>
+          <path class="logo-archwire" d="M11 31.5C20.5 36.8 43.5 36.8 53 31.5" stroke="url(#ssArchwireGrad)" stroke-width="2" stroke-linecap="round"/>
+          <circle class="logo-node logo-node-1" cx="16" cy="33.2" r="1.5" fill="#EBF4FA"/>
+          <circle class="logo-node logo-node-2" cx="48" cy="33.2" r="1.5" fill="#FCE19D"/>
+          <g class="logo-bracket-group">
+            <rect class="logo-bracket-pad" x="25.5" y="27" width="13" height="11" rx="2" fill="url(#ssBracketGrad)" stroke="#FFE8A3" stroke-width="0.6"/>
+            <rect class="logo-bracket-slot" x="24.5" y="31.2" width="15" height="2.6" rx="0.6" fill="#0E273C" opacity="0.85"/>
+            <rect class="logo-bracket-gem" x="30.5" y="31" width="3" height="3" rx="0.7" fill="#FFFFFF"/>
+            <line x1="28.5" y1="27" x2="28.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+            <line x1="35.5" y1="27" x2="35.5" y2="38" stroke="#7A4C0A" stroke-width="0.8" opacity="0.6"/>
+          </g>
+          <path class="logo-smile-arc" d="M15 48.5C22 55.5 42 55.5 49 48.5" stroke="url(#ssSmileArcGrad)" stroke-width="2.6" stroke-linecap="round"/>
+          <g class="logo-sparkle" filter="url(#logoSparkleGlow)">
+            <path d="M47 11.5L48.2 14.8L51.5 16L48.2 17.2L47 20.5L45.8 17.2L42.5 16L45.8 14.8Z" fill="url(#ssLogoGold)"/>
+            <circle cx="47" cy="16" r="1" fill="#FFFFFF"/>
+          </g>
+          <circle cx="51.5" cy="11.5" r="0.9" fill="#FFF2CE" opacity="0.85"/>
+        </svg>
+          <span class="brand-logo-text">
+            <span class="brand-logo-title"><span class="smart">SMART</span><span class="smile">SMILE</span><span class="dot">.</span></span>
+            <span class="brand-logo-tagline">Orthodontics &amp; Braces</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="nav flex-column mb-auto">
+        <a class="nav-link" href="dashboard.html"><i class="bi bi-grid-fill"></i> Overview</a>
+        <a class="nav-link" href="appointments.html"><i class="bi bi-calendar3"></i> Appointments</a>
+        <a class="nav-link active" href="treatment-progress.html"><i class="bi bi-graph-up-arrow"></i> Treatment Progress</a>
+        <a class="nav-link" href="treatment-photos.html"><i class="bi bi-camera"></i> Treatment Photos</a>
+        <a class="nav-link" href="treatment-plan.html"><i class="bi bi-clipboard2-pulse"></i> Treatment Plan</a>
+        <a class="nav-link" href="payment-installments.html"><i class="bi bi-credit-card"></i> Payment Installments</a>
+        <a class="nav-link" href="documents.html"><i class="bi bi-file-earmark-pdf"></i> Documents</a>
+        <a class="nav-link" href="profile.html"><i class="bi bi-person"></i> Profile</a>
+      </nav>
+
+      <div class="mt-4 pt-3 border-top border-secondary">
+        <div class="dashboard-sidebar-socials mb-2">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="dashboard-sidebar-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="dashboard-sidebar-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="dashboard-sidebar-social-btn" aria-label="X (formerly Twitter)" title="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="dashboard-sidebar-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <a class="nav-link text-white-50" href="../auth/login.html"><i class="bi bi-box-arrow-left"></i> Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <div class="dashboard-header">
+        <div>
+          <h1 class="fs-3 fw-bold mb-1" style="color: var(--text-primary);">TREATMENT PROGRESS VISUALIZATION</h1>
+          <p class="small text-muted mb-0">Track each milestone of your biological tooth movement journey.</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <span class="badge bg-warning text-dark px-3 py-2 fs-6">Active Stage: 62% Completed</span>
+          <button class="nav-util-btn theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill text-primary"></i>
+          </button>
+          <button class="nav-util-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction" title="Switch text direction">
+            <i class="bi bi-arrow-left-right text-warning"></i>
+          </button>
+          <a href="../index.html" class="btn-smart-secondary btn-sm"><i class="bi bi-globe"></i> Main Site</a>
+          <div class="d-flex align-items-center gap-2 ms-2 ps-2 border-start">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Alex Morgan" class="rounded-circle object-fit-cover" style="width: 40px; height: 40px; border: 2px solid var(--smile-gold);">
+            <div class="d-none d-sm-block">
+              <div class="fw-bold small" style="color: var(--text-primary);">Alex Morgan</div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Tray 18 of 28</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo Disclaimer Box -->
+      <div class="demo-disclaimer-box mb-4">
+        <i class="bi bi-info-circle-fill me-1 text-primary"></i> <strong>Sample Treatment Journey:</strong> Interactive milestone component demonstrating clear aligner progression for patient Alex Morgan.
+      </div>
+
+      <!-- Treatment Progress Visual Track Component -->
+      <div class="smart-card p-4 mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+          <div>
+            <h3 class="fs-5 fw-bold mb-1" style="color: var(--text-primary);">The 7-Stage SmartSmile Alignment Path</h3>
+            <p class="small text-muted mb-0">Click any milestone node to view clinical details and doctor notes.</p>
+          </div>
+          <div class="small fw-semibold" style="color: var(--smile-gold);">
+            <i class="bi bi-record-circle-fill"></i> Current Active: Tray 18 of 28
+          </div>
+        </div>
+
+        <!-- Progress Timeline Track -->
+        <div class="treatment-progress-track">
+          <div class="treatment-progress-bar">
+            <div class="treatment-progress-fill" style="width: 62%;"></div>
+          </div>
+
+          <!-- Node 1: Completed -->
+          <div class="milestone-node completed" data-step="1">
+            <div class="milestone-circle"><i class="bi bi-check2"></i></div>
+            <span class="milestone-label">Consultation</span>
+            <span class="milestone-sub">June 10</span>
+          </div>
+
+          <!-- Node 2: Completed -->
+          <div class="milestone-node completed" data-step="2">
+            <div class="milestone-circle"><i class="bi bi-check2"></i></div>
+            <span class="milestone-label">3D Plan</span>
+            <span class="milestone-sub">June 24</span>
+          </div>
+
+          <!-- Node 3: Completed -->
+          <div class="milestone-node completed" data-step="3">
+            <div class="milestone-circle"><i class="bi bi-check2"></i></div>
+            <span class="milestone-label">Started</span>
+            <span class="milestone-sub">July 15</span>
+          </div>
+
+          <!-- Node 4: Active (Gold Milestone) -->
+          <div class="milestone-node active" data-step="4">
+            <div class="milestone-circle">62%</div>
+            <span class="milestone-label" style="color: var(--smile-gold); font-weight: 800;">Alignment</span>
+            <span class="milestone-sub">Active Phase</span>
+          </div>
+
+          <!-- Node 5: Upcoming -->
+          <div class="milestone-node" data-step="5">
+            <div class="milestone-circle">5</div>
+            <span class="milestone-label">Refinement</span>
+            <span class="milestone-sub">Est. Dec</span>
+          </div>
+
+          <!-- Node 6: Pending -->
+          <div class="milestone-node" data-step="6">
+            <div class="milestone-circle">6</div>
+            <span class="milestone-label">Retention</span>
+            <span class="milestone-sub">Est. Feb</span>
+          </div>
+
+          <!-- Node 7: Completed Goal -->
+          <div class="milestone-node" data-step="7">
+            <div class="milestone-circle"><i class="bi bi-stars"></i></div>
+            <span class="milestone-label">Completed</span>
+            <span class="milestone-sub">Graduation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone Interactive Detail Panel -->
+      <div class="row g-4 mb-4">
+        <div class="col-lg-8">
+          <div class="smart-card p-4 h-100 border-start border-4 border-warning">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="smart-badge smart-badge-gold" id="milestoneDetailStatus">Active (62% Completed)</span>
+              <span class="small text-muted" id="milestoneDetailDate">Current Stage (Tray 18 of 28)</span>
+            </div>
+            <h3 class="fs-4 fw-bold mb-3" id="milestoneDetailTitle" style="color: var(--text-primary);">Active Alignment Phase</h3>
+            <p class="text-secondary" id="milestoneDetailNotes">
+              Arch expansion progressing smoothly. Overjet reduction in progress. Upper anterior crowding is 80% relieved. Patient wear compliance verified at 22 hours daily. Next physical check-in Oct 18 with Dr. Olivia Carter.
+            </p>
+            <div class="p-3 rounded-3 mt-3" style="background: var(--blue-tint);">
+              <div class="small fw-bold text-primary mb-1"><i class="bi bi-clipboard2-check-fill me-1"></i> Patient Action Required:</div>
+              <div class="small text-secondary">Switch to Tray 19 on Wednesday, Oct 16 before your appointment. Contact coordinator if attachments feel loose.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="smart-card p-4 h-100">
+            <h4 class="fs-6 fw-bold mb-3" style="color: var(--text-primary);">Treatment Snapshot</h4>
+            <div class="d-flex justify-content-between py-2 border-bottom small">
+              <span class="text-muted">Total Aligner Trays:</span>
+              <strong>28 Trays</strong>
+            </div>
+            <div class="d-flex justify-content-between py-2 border-bottom small">
+              <span class="text-muted">Current Tray Number:</span>
+              <strong style="color: var(--smile-gold);">Tray 18</strong>
+            </div>
+            <div class="d-flex justify-content-between py-2 border-bottom small">
+              <span class="text-muted">Days per Tray:</span>
+              <strong>10 Days</strong>
+            </div>
+            <div class="d-flex justify-content-between py-2 border-bottom small">
+              <span class="text-muted">Estimated Completion:</span>
+              <strong>Feb 2027</strong>
+            </div>
+            <div class="d-flex justify-content-between py-2 small">
+              <span class="text-muted">Supervising Doctor:</span>
+              <strong style="color: var(--smart-blue);">Dr. Olivia Carter</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/progress.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
