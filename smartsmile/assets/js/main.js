@@ -11,6 +11,7 @@
     initBeforeAfterSliders();
     initFormValidation();
     initTreatmentFilters();
+    initResourceDownloads();
   });
 
   /**
@@ -237,18 +238,61 @@
         cards.forEach((col) => {
           const card = col.querySelector('.smart-card');
           const categories = card ? (card.getAttribute('data-treatment-category') || '') : '';
-          if (filter === 'all' || categories.split(' ').includes(filter)) {
-            col.style.display = '';
+          const match = filter === 'all' || categories.split(/\s+/).includes(filter);
+          if (match) {
+            col.style.removeProperty('display');
+            col.classList.remove('d-none');
           } else {
             col.style.display = 'none';
+            col.classList.add('d-none');
           }
         });
       });
     });
   }
 
+  /**
+   * Handle download resource buttons (Tracker, Recipe Book, Care Guide)
+   * Downloads official clinic PDF guides from assets/docs/ with spinner feedback
+   */
+  function initResourceDownloads() {
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.btn-download-resource');
+      if (!btn) return;
+      e.preventDefault();
+
+      const docName = btn.getAttribute('data-resource-name') || 'SmartSmile Orthodontic Resource';
+      const fileName = btn.getAttribute('data-resource-file') || 'SmartSmile-Guide.pdf';
+      const originalHtml = btn.innerHTML;
+
+      btn.classList.add('disabled');
+      btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Downloading...';
+
+      // Download from assets/docs/ or trigger anchor
+      const pdfPath = 'assets/docs/' + fileName;
+      const tempLink = document.createElement('a');
+      tempLink.href = pdfPath;
+      tempLink.download = fileName;
+      tempLink.target = '_blank';
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+
+      setTimeout(() => {
+        btn.classList.remove('disabled');
+        btn.innerHTML = '<i class="bi bi-check2-circle me-2 text-success"></i> Downloaded!';
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 2500);
+      }, 500);
+    });
+  }
+
   window.SmartSmileMain = {
     initSliders: initBeforeAfterSliders,
-    initFormValidation: initFormValidation
+    initFormValidation: initFormValidation,
+    initTreatmentFilters: initTreatmentFilters,
+    initResourceDownloads: initResourceDownloads
   };
 })();
+

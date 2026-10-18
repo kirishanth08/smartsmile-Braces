@@ -71,6 +71,8 @@ body.rtl {
    -------------------------------------------------------------------------- */
 [dir="rtl"] .me-auto { margin-right: 0 !important; margin-left: auto !important; }
 [dir="rtl"] .ms-auto { margin-left: 0 !important; margin-right: auto !important; }
+[dir="rtl"] .ms-xl-auto { margin-left: 0 !important; margin-right: auto !important; }
+[dir="rtl"] .me-xl-auto { margin-right: 0 !important; margin-left: auto !important; }
 
 [dir="rtl"] .me-1 { margin-right: 0 !important; margin-left: 0.25rem !important; }
 [dir="rtl"] .me-2 { margin-right: 0 !important; margin-left: 0.5rem !important; }
@@ -115,6 +117,18 @@ body.rtl {
 [dir="rtl"] .smart-navbar .navbar-nav {
   padding-right: 0;
   padding-left: 0;
+}
+
+[dir="rtl"] .smart-navbar .nav-actions-wrap {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding: 0 0.5rem;
+}
+
+[dir="rtl"] .btn-nav-login i,
+[dir="rtl"] .btn-nav-cta i {
+  margin-right: 0 !important;
+  margin-left: 0.45rem !important;
 }
 
 [dir="rtl"] .smart-navbar .nav-link.active::before {
@@ -217,6 +231,11 @@ body.rtl {
 /* --------------------------------------------------------------------------
    9. FORMS & INPUTS
    -------------------------------------------------------------------------- */
+[dir="rtl"] .form-label {
+  text-align: right !important;
+  display: block;
+}
+
 [dir="rtl"] .form-check {
   padding-left: 0 !important;
   padding-right: 1.8em !important;
@@ -231,7 +250,19 @@ body.rtl {
 
 [dir="rtl"] .form-control,
 [dir="rtl"] .form-select {
-  text-align: right;
+  text-align: right !important;
+  direction: rtl;
+}
+
+[dir="rtl"] .form-select {
+  background-position: left 1rem center !important;
+  padding-left: 2.75rem !important;
+  padding-right: 1rem !important;
+}
+
+[dir="rtl"] input[type="date"].form-control {
+  text-align: right !important;
+  direction: rtl;
 }
 
 [dir="rtl"] .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
@@ -248,6 +279,39 @@ body.rtl {
   border-bottom-left-radius: 0;
   border-top-right-radius: var(--bs-border-radius);
   border-bottom-right-radius: var(--bs-border-radius);
+}
+
+/* Auth Input Group RTL Mirroring */
+[dir="rtl"] .auth-input-group .input-group-text {
+  border-right: 1.5px solid rgba(24, 59, 78, 0.2) !important;
+  border-left: none !important;
+  border-top-right-radius: var(--radius-md) !important;
+  border-bottom-right-radius: var(--radius-md) !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+[dir="rtl"] .auth-input-group .form-control {
+  border-left: 1.5px solid rgba(24, 59, 78, 0.2) !important;
+  border-right: none !important;
+  border-top-left-radius: var(--radius-md) !important;
+  border-bottom-left-radius: var(--radius-md) !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  text-align: right !important;
+  direction: rtl;
+}
+
+[dir="rtl"][data-bs-theme="dark"] .auth-input-group .input-group-text,
+[dir="rtl"] body.theme-dark .auth-input-group .input-group-text {
+  border-right: 1.5px solid rgba(243, 243, 224, 0.22) !important;
+  border-left: none !important;
+}
+
+[dir="rtl"][data-bs-theme="dark"] .auth-input-group .form-control,
+[dir="rtl"] body.theme-dark .auth-input-group .form-control {
+  border-left: 1.5px solid rgba(243, 243, 224, 0.22) !important;
+  border-right: none !important;
 }
 
 /* --------------------------------------------------------------------------
