@@ -2983,24 +2983,73 @@ body.theme-dark .condition-meta-row:not(:last-child) {
 }
 
 /* Material Comparison & Tailored Solutions */
+.material-compare-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-compare-card .material-badge-wrap {
+  min-height: 1.85rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
 .material-compare-card .material-title {
-  min-height: 3.25rem;
+  min-height: 3.5rem;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
 }
 
 .material-compare-card .material-desc {
-  min-height: 4.8rem;
+  flex: 1 1 auto;
+  min-height: 6.25rem;
   line-height: 1.55;
+  margin-bottom: 1.25rem;
 }
 
 .material-compare-list {
   margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+[data-bs-theme="dark"] .material-compare-list,
+body.theme-dark .material-compare-list {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+.material-compare-list li {
+  min-height: 2.15rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin-bottom: 0 !important;
 }
 
 .material-compare-list li i {
-  font-size: 1.05rem;
-  line-height: 1;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  color: var(--smile-primary, #27548a);
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.material-compare-list li span {
+  font-size: 0.875rem;
+  line-height: 1.35;
+  color: var(--text-secondary, #556980);
+  display: inline-block;
+}
+
+[data-bs-theme="dark"] .material-compare-list li span,
+body.theme-dark .material-compare-list li span {
+  color: var(--neutral-400, #94a3b8);
 }
 
 .tailored-recommend-pill {
